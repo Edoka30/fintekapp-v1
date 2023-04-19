@@ -113,6 +113,7 @@ public class WalletServiceImpl implements WalletService {
 //	public Page<User> pageabledAllUsers(Optional<Integer> page, Optional<String> sortBy) throws Exception {
 //		return repos.findAll(PageRequest.of(page.orElse(0), 10, Sort.Direction.ASC, sortBy.orElse("id")));
 //	}
+	
 	@Override
 	public Page<TransactionEntity> transactionHistoryPaged(String accNumber, Optional<Integer> page,
 			Optional<String> sortBy) throws Exception {
